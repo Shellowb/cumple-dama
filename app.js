@@ -1,10 +1,25 @@
-const app = require("express")();
-const PORT = process.env.PORT || 3000;
+const express = require('express');
+const app = express();
+const path = require('path');
+const router = express.Router();
 
-app.get("", (req, res) => {
-    res.send("Hello World");
+app.use(express.static(__dirname + '/'));
+
+router.get('/',function(req,res){
+  res.sendFile(path.join(__dirname+'/cumple.html'));
+  //__dirname : It will resolve to your project folder.
 });
 
-app.listen(PORT, () => {
-    console.log('App up at port ${PORT}')
-})
+router.get('/about',function(req,res){
+  res.sendFile(path.join(__dirname+'/cumple.css'));
+});
+
+router.get('/sitemap',function(req,res){
+  res.sendFile(path.join(__dirname+'/cumple.js'));
+});
+
+//add the router
+app.use('/', router);
+app.listen(process.env.port || 3000);
+
+console.log('Running at Port 3000');
