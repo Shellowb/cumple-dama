@@ -8,7 +8,7 @@
 body {
   background: #E5E5E5;
   background-image: url("/gray-floral.png");
-  padding: 50px;
+  padding: 1em;
 
   
 }
@@ -32,7 +32,7 @@ body {
   -moz-box-shadow: 2px 2px 30px rgba(0, 0, 0, .25), 0 0 1px rgba(0, 0, 0, .5);
   box-shadow: 2px 2px 30px rgba(0, 0, 0, .25), 0 0 1px rgba(0, 0, 0, .5);
   position: absolute;
-  left: 50%;
+  left: 20%;
 }
 
 
@@ -43,7 +43,7 @@ body {
     box-shadow: inset 2px 0 1px rgba(0, 0, 0, .05);
 }
 #card {
-    max-width: 960px;
+    max-width: 90em;
     margin: 0 auto;
     transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
@@ -177,7 +177,7 @@ p.signed {
    display: none;
 }
 
-footer {
+/* footer {
   max-width: 500px;
   margin: 40px auto;
   font-family: 'Nobile', sans-serif;
@@ -185,4 +185,4 @@ footer {
   line-height: 1.6;
   color: #888;
   text-align: center;
-}
+} */
